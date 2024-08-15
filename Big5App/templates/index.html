@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/scripts.js' %}"></script>
+</head>
+<body>
+    <h1>Welcome to Big Five Assessment</h1>
+    <p> "What is the best was to summarize an individual?" Take this test to know about your personality in terms of extraversion, neuroticism, agreeableness, conscientiousness and openness to experience.  </p>
+    <form action="{% url 'store_name' %}" method="post">
+        {% csrf_token %}
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <button onclick="window.location.href='{% url 'assessment' %}'">Start Assessment</button>
+    </form>
+</body>
+</html>

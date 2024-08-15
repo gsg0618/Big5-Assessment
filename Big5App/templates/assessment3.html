@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Big5 Assessment - Page 3</title>
+</head>
+<body>
+    <h1>Big5 Assessment - Page 3</h1>
+    <form method="post">
+        {% csrf_token %}
+        <p>I feel little concern for others.</p>
+        {{ form.AGR1 }}
+        <p>I am interested in people.</p>
+        {{ form.AGR2 }}
+        <p>I insult people.</p>
+        {{ form.AGR3 }}
+        <p>I sympathize with others' feelings.</p>
+        {{ form.AGR4 }}
+        <p>I am not interested in other people's problems.</p>
+        {{ form.AGR5 }}
+        <p>I have a soft heart.</p>
+        {{ form.AGR6 }}
+        <p>I am not really interested in others.</p>
+        {{ form.AGR7 }}
+        <p>I take time out for others.</p>
+        {{ form.AGR8 }}
+        <p>I feel others' emotions.</p>
+        {{ form.AGR9 }}
+        <p>I make people feel at ease.</p>
+        {{ form.AGR10 }}
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

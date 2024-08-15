@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Big5 Assessment - Page 2</title>
+</head>
+<body>
+    <h1>Big5 Assessment - Page 2</h1>
+    <form method="post">
+        {% csrf_token %}
+        <p>I get stressed out easily.</p>
+        {{ form.EST1 }}
+        <p>I am relaxed most of the time.</p>
+        {{ form.EST2 }}
+        <p>I worry about things.</p>
+        {{ form.EST3 }}
+        <p>I seldom feel blue.</p>
+        {{ form.EST4 }}
+        <p>I am easily disturbed.</p>
+        {{ form.EST5 }}
+        <p>I get upset easily.</p>
+        {{ form.EST6 }}
+        <p>I change my mood a lot.</p>
+        {{ form.EST7 }}
+        <p>I have frequent mood swings.</p>
+        {{ form.EST8 }}
+        <p>I get irritated easily.</p>
+        {{ form.EST9 }}
+        <p>I often feel blue.</p>
+        {{ form.EST10 }}
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

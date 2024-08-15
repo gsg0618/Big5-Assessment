@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Big5 Assessment - Page 5</title>
+</head>
+<body>
+    <h1>Big5 Assessment - Page 5</h1>
+    <form method="post">
+        {% csrf_token %}
+        <p>I have a rich vocabulary.</p>
+        {{ form.OPN1 }}
+        <p>I have difficulty understanding abstract ideas.</p>
+        {{ form.OPN2 }}
+        <p>I have a vivid imagination.</p>
+        {{ form.OPN3 }}
+        <p>I am not interested in abstract ideas.</p>
+        {{ form.OPN4 }}
+        <p>I have excellent ideas.</p>
+        {{ form.OPN5 }}
+        <p>I do not have a good imagination.</p>
+        {{ form.OPN6 }}
+        <p>I am quick to understand things.</p>
+        {{ form.OPN7 }}
+        <p>I use difficult words.</p>
+        {{ form.OPN8 }}
+        <p>I spend time reflecting on things.</p>
+        {{ form.OPN9 }}
+        <p>I am full of ideas.</p>
+        {{ form.OPN10 }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

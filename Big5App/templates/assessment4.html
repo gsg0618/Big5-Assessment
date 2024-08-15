@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Big5 Assessment - Page 4</title>
+</head>
+<body>
+    <h1>Big5 Assessment - Page 4</h1>
+    <form method="post">
+        {% csrf_token %}
+        <p>I am always prepared.</p>
+        {{ form.CSN1 }}
+        <p>I leave my belongings around.</p>
+        {{ form.CSN2 }}
+        <p>I pay attention to details.</p>
+        {{ form.CSN3 }}
+        <p>I make a mess of things.</p>
+        {{ form.CSN4 }}
+        <p>I get chores done right away.</p>
+        {{ form.CSN5 }}
+        <p>I often forget to put things back in their proper place.</p>
+        {{ form.CSN6 }}
+        <p>I like order.</p>
+        {{ form.CSN7 }}
+        <p>I shirk my duties.</p>
+        {{ form.CSN8 }}
+        <p>I follow a schedule.</p>
+        {{ form.CSN9 }}
+        <p>I am exacting in my work.</p>
+        {{ form.CSN10 }}
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

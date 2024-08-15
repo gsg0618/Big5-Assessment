@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang=" en">
+<head>
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <p>Welcome, {{ user_name }}!</p>
+
+    <h2>Percentile Scores</h2>
+    <ul>
+        {% for trait, score in percentiles.items %}
+            <li>{{ trait }}: {{ score }}%</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Top 5 Countries</h2>
+    <ul>
+        {% for country in top_countries %}
+            <li>{{ country }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Mean Scores of Traits</h2>
+    <h3>New User</h3>
+    <ul>
+        {% for trait, score in new_user_mean_scores.items %}
+            <li>{{ trait }}: {{ score }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>All Users</h3>
+    <ul>
+        {% for trait, score in all_users_mean_scores.items %}
+            <li>{{ trait }}: {{ score }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
